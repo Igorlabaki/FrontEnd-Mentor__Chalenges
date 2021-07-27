@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Captura de Tela (34)](https://user-images.githubusercontent.com/62656936/127180176-cfee03a0-e4f8-41f1-affb-72c1307aab07.png)
+![Captura de Tela (38)](https://user-images.githubusercontent.com/62656936/127219379-79cc2650-9be1-4c3e-b6b9-2892db4c1dd7.png)
 
 <hr>
 
