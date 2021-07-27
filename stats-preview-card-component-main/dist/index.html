@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/pt/eng" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../dist/css/tailwind.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+</head>
+<body class="min-h-screen flex justify-center items-center bg-vdBlue ">
+  
+  <div class="mobile:w-3/6 desktop:flex desktop:w-5/6 mobile\:my-16">
+    <div class="bg-accent desktop:order-last mobile:rounded-t desktop:rounded-r desktop:w-1/2">
+      <img src="../dist/images/image-header-desktop.jpg" alt="work-place" class="w-full h-full mix-blend-overlay mobile:rounded-t desktop:rounded-r">
+    </div>
+    <div class="bg-dBlue p-20 desktop:w-1/2 mobile:text-center desktop:text-left mobile:rounded-b desktop:rounded-l">
+      <h1 class="text-main mobile:text-4xl desktop:text-4xl font-inter font-black">Get <span class="text-accent">insights </span> that help your business grow.</h1>
+      <p class="text-paragraph font-lexend text-lg mt-8">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.</p>
+      <div class="mobile:mt-16 desktop:mt-20 desktop:flex desktop:justify-between">
+        <div class=" mb-4 ">
+          <div class="text-main text-2xl font-inter font-black">10k+</div>
+          <div class="text-statHeadings font-lexend">COMPANIES</div>
+        </div>
+        <div class="mb-4">
+          <div class="text-main text-2xl font-inter font-black">314</div>
+          <div class="text-statHeadings font-lexend" >TEMPLATES</div>
+        </div>
+        <div class="">
+          <div class="text-main text-2xl font-inter font-black">12M+</div> 
+          <div class="text-statHeadings font-lexend">QUERIES</div>
+        </div>
+      </div> 
+    </div>
+  </div>
+    
+</body>
+</html>
