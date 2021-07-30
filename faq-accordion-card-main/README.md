@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-
+![Captura de Tela (40)](https://user-images.githubusercontent.com/62656936/127642256-5cf1bc44-0fe4-4c1a-9d6a-247678aa0f06.png)
 
 <hr>
 
