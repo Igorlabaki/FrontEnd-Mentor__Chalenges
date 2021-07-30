@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!--Vue script-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!--Material icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Style css-->
+  <link rel="stylesheet" href="../dist/css/tailwind.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+</head>
+<body>
+  <div class="h-screen bg-gradient-to-t from-sBlue to-sViolet flex justify-center flex-1 items-center " id="app">
+    <img src="../dist/images/illustration-box-desktop.svg" alt="" class="absolute desktop:top-92 desktop:left-40 z-20">
+    
+    <div class="bg-white w-4/6 desktop:h-4/6  h-auto rounded-3xl desktop:flex desktop:overflow-hidden font-kumbh z-10 shadow-2xl">
+      <div class="w-1/2 relative flex items-center flex-1">
+        <img src="../dist/images/bg-pattern-desktop.svg" alt="" class="absolute desktop:-m-36 mobile:-mt-32 z-20">
+        <img src="../dist/images/illustration-woman-online-desktop.svg" alt="" class="desktop:-m-22 mobile:-mt-32 mobile:-mr-44 index-1 z-30">
+      </div>
+      <div class="desktop:w-1/2 p-14 overflow-auto">
+        <h1 class="text-4xl  font-bold">FAQ</h1>
+          <div class="mt-8 ">
+            <div class="flex justify-between">
+              <h5 :class="first ? fontBold : fontNormal">How many team members can I invite?</h5> <span class="material-icons text-sRed pointer" @click="first =! first" v-text="first ? expandLess : expandMore"></span>
+            </div>
+            <p v-if="first" class="my-3 text-dBlue">You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.</p>
+            <hr class="my-3">
+            <div class="flex justify-between">
+              <h5 :class="second ? fontBold : fontNormal">What is the maximum file upload size? </h5> <span class="material-icons text-sRed"  @click="second =! second;expandIcon(second)" v-text="second ? expandLess : expandMore"></span>
+            </div>
+            <p v-if="second" class="my-3 text-dBlue">No more than 2GB. All files in your account must fit your allotted storage space.</p> 
+            <hr class="my-3">
+            <div class="flex justify-between">
+              <h5 :class="third ? fontBold : fontNormal">How do I reset my password? </h5> <span class="material-icons text-sRed" @click="third =! third;expandIcon(third)" v-text="third ? expandLess : expandMore"></span>
+            </div>
+            <p v-if="third" class="my-3 text-dBlue">Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p> 
+            <hr class="my-3">
+            <div class="flex justify-between">
+              <h5 :class="fourth ? fontBold : fontNormal">Can I cancel my subscription?</h5><span class="material-icons text-sRed" @click="fourth =! fourth;expandIcon(fourth)" v-text="fourth ? expandLess : expandMore"></span>
+            </div>
+            <p v-if="fourth" class="my-3 text-dBlue">Yes! Send us a message and we’ll process your request no questions asked.</p> 
+            <hr class="my-3">
+            <div class="flex justify-between">
+              <h5 :class="fifth ? fontBold : fontNormal">Do you provide additional support? </h5><span class="material-icons text-sRed" @click="fifth =! fifth;expandIcon(fifth)" v-text="fifth ? expandLess : expandMore"></span>
+            </div>
+            <p v-if="fifth" class="my-3 text-dBlue">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            <hr class="my-3">
+          </div> 
+      </div>
+    </div>
+  </div>  
+  Igor Goncalo
+</body>
+</html>
+  <script>
+    new Vue({
+        el: '#app',
+        data: {
+          first   : false,
+          second  : false,
+          third   : false,
+          fourth  : false,
+          fifth   : false,
+
+          fontBold  : 'font-bold',
+          fontNormal: 'font-normal',
+
+          expandMore: 'expand_more',
+          expandLess: 'expand_less',
+
+          mobile:false
+        },
+        methods:{
+          expandIcon(element){
+            
+          }
+        }
+    })
+  </script>
+
